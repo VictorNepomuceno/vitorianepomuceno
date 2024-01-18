@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+  transition: 1s;
+}
+
+.hidden {
+  left: -100%;
+  transition: 1s;
+  filter: blur(30px);
+}
+
+.hidden.show {
+  left: 0;
+  filter: blur(0px);
+}
+
+body {
+  background: #f6f3e8;
+  font-family: "Chillax", sans-serif;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  width: 100vw;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  object-position: center center;
+}

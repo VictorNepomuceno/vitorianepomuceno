@@ -1,0 +1,159 @@
+.header__nav.blur__header {
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: fixed; */
+  /* width: 100%; */
+  top: 0;
+  left: 0;
+  padding: 2rem 3rem;
+  background: transparent;
+  color: #7b0b11;
+  z-index: 1000;
+  transition: 0.3s;
+  backdrop-filter: blur(30px);
+}
+
+.header__nav i {
+  display: none;
+}
+
+.header__logo {
+  width: 300px;
+  box-shadow: none;
+  padding: 10px 20px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  gap: 60px;
+}
+
+.nav__link {
+  color: #7b0b11;
+  transition: 0.3s;
+  font-weight: 300;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  font-weight: 500;
+  font-family: "Ranade", sans-serif;
+}
+
+.consulta {
+  background-color: #7b0b11;
+  color: #f6f3e8;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  font-family: "Ranade", sans-serif;
+  transition: 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.consulta:hover {
+  background-color: rgba(127, 11, 17, 0.9);
+}
+
+.consulta::after {
+  display: none;
+}
+
+.nav__link::after {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: #7b0b11b1;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.nav__link:hover::after {
+  width: 45%;
+}
+
+.nav__link:hover {
+  color: #7b0b11b1;
+}
+
+@media (max-width: 600px) {
+  #home {
+    display: none;
+  }
+
+  #about {
+    display: none;
+  }
+  .header__nav {
+    padding: 2rem 1.2rem;
+    flex-direction: row-reverse;
+  }
+
+  .header__logo {
+    padding: 0;
+    font-size: 1.2rem;
+  }
+
+  .header__nav i {
+    display: block;
+    font-size: 1.2rem;
+  }
+
+  .nav__list-container {
+    position: fixed;
+    transition: left 0.3s;
+    top: 0;
+    left: -100%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    backdrop-filter: blur(30px);
+    padding: 8rem 3rem;
+    height: 100vh;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    width: 70%;
+    /* display: none; */
+  }
+
+  .close__menu {
+    position: absolute;
+    top: 2.5rem;
+    left: 1.5rem;
+  }
+
+  .nav__list-container.show {
+    left: 0;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 10px;
+  }
+
+  .nav__link::after {
+    display: none;
+  }
+
+  .socials {
+    margin-top: 40px;
+    position: static;
+    display: flex;
+    gap: 30px;
+  }
+
+  .socials i {
+    font-size: 1.5rem;
+  }
+}

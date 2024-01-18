@@ -1,0 +1,69 @@
+#depoimentos {
+  padding-top: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.depoimentos__container {
+  margin-top: 10rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 700px auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.depoimentos {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #7b0b11;
+  position: relative;
+}
+
+.stars i {
+  color: gold;
+}
+
+.depoimentos h2 {
+  font-family: "Ranade", sans-serif;
+  font-size: 1.5rem;
+}
+
+.depoimentos p {
+  margin-top: 0.5rem;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.depoimentos .fa-quote-left {
+  position: absolute;
+  left: -1.5rem;
+  font-size: 1.1rem;
+  color: #7b0b11;
+}
+.depoimentos .fa-quote-right {
+  position: absolute;
+  right: 17.4rem;
+  font-size: 1.1rem;
+  bottom: -0.1rem;
+  color: #7b0b11;
+}
+
+.stars .fa-comment-dots {
+  color: #7b0b11;
+  position: absolute;
+  right: 0;
+  font-size: 1.5rem;
+}
