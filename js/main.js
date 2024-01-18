@@ -1,5 +1,6 @@
 import initAnimaScroll from "./animaScroll.js";
 import initBlurHeader from "./blurHeader.js";
+import initFooterScroll from "./footer.js";
 import initMobileMenu from "./mobileMenu.js";
 import initUpToTop from "./upToTop.js";
 
@@ -7,6 +8,7 @@ initMobileMenu();
 initBlurHeader();
 initUpToTop();
 initAnimaScroll();
+initFooterScroll();
 
 const swiper = new Swiper(".swiper", {
   loop: true,

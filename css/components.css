@@ -12,7 +12,7 @@
   bottom: 2rem;
   background: #333;
   padding: 1.5rem 2.6rem;
-  color: #fff;
+  color: #f6f3e8;
   transition: 0.5s;
   animation: animation 0.4s forwards;
   background: #7b0b11;
@@ -29,6 +29,11 @@
   display: block;
   right: 2rem;
   filter: blur(0px);
+}
+
+.upToTop.active {
+  background-color: #000;
+  color: #7b0b11;
 }
 
 .title::after {
