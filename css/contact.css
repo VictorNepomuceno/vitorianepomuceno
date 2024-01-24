@@ -28,17 +28,23 @@
   gap: 6rem;
 }
 
-.contact__links {
+.contact__info > .consulta {
   margin-top: 3rem;
+  font-size: 1.5rem;
+  padding: 1.5rem 3rem;
+}
+
+.contact__links {
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   gap: 3rem;
-  font-size: 2.5rem;
   justify-content: center;
 }
 
 .contact__links i {
   font-size: 4rem;
+  color: #7b0b11;
 }
 
 .contact__container img {
@@ -50,16 +56,4 @@
 .contact__container .title {
   font-size: 3rem;
   text-align: center;
-}
-
-.flexitem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 2.5rem;
-  justify-content: center;
-}
-
-.flexitem i {
-  font-size: 4rem;
 }

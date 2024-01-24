@@ -48,3 +48,13 @@
   transform: rotate(35deg);
   box-shadow: 4px 20px rgba(127, 11, 17, 0.8);
 }
+
+.dev {
+  color: #111;
+  text-decoration: underline;
+}
+
+.devSpan {
+  color: #111;
+  opacity: 0.5;
+}
