@@ -1,12 +1,12 @@
-.header__nav.blur__header {
+/* .header__nav.blur__header {
   backdrop-filter: blur(30px);
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
-}
+} */
 
 .header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); */
   /* position: fixed; */
   /* width: 100%; */
   top: 0;
@@ -46,7 +46,7 @@
   flex-direction: column;
   position: relative;
   font-weight: 500;
-  font-family: "Ranade", sans-serif;
+  font-family: 'Ranade', sans-serif;
 }
 
 .consulta {
@@ -54,7 +54,7 @@
   color: #f6f3e8;
   border-radius: 30px;
   padding: 1rem 2rem;
-  font-family: "Ranade", sans-serif;
+  font-family: 'Ranade', sans-serif;
   transition: 0.3s;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
@@ -70,7 +70,7 @@
   position: absolute;
   right: 0;
   bottom: 5px;
-  content: "";
+  content: '';
   width: 0%;
   height: 3px;
   background-color: #7b0b11b1;
